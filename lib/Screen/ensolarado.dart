@@ -51,17 +51,21 @@ class _EnsolaradoState extends State<Ensolarado> {
             child:  Text('24°', style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold, color: Colors.white),),
           ),
            SizedBox(
-            height:  MediaQuery.of(context).size.height * .26,
+            height:  MediaQuery.of(context).size.height * .28,
           ),
-           Center(
-            child: Container(
-              height: MediaQuery.of(context).size.height * .1,
-              width: MediaQuery.of(context).size.width * .99,
-              decoration: const BoxDecoration(
+
+          ],
+        ),
+      ),
+      bottomNavigationBar:
+         Container(
+            height:  MediaQuery.of(context).size.height * .1,
+            width: MediaQuery.of(context).size.width * .99,
+            decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(topLeft: Radius.circular(50.0),topRight: Radius.circular(50.0) )
-              ),
-              child: Row(
+            ),
+            child: Row(
                 children: const <Widget>[
                   Padding(
                     padding: EdgeInsets.only(left: 20),
@@ -80,12 +84,9 @@ class _EnsolaradoState extends State<Ensolarado> {
                     child: Text('Future', style: TextStyle(fontSize: 20),),
                   )
                 ]
-              )
-            ),
-          )
-          ],
+            )
         ),
-      ),
+
     );
   }
 }
