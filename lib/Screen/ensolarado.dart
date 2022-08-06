@@ -51,11 +51,11 @@ class _EnsolaradoState extends State<Ensolarado> {
             child:  Text('24°', style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold, color: Colors.white),),
           ),
            SizedBox(
-            height:  MediaQuery.of(context).size.height * .29,
+            height:  MediaQuery.of(context).size.height * .26,
           ),
            Center(
             child: Container(
-              height: MediaQuery.of(context).size.height * .09,
+              height: MediaQuery.of(context).size.height * .1,
               width: MediaQuery.of(context).size.width * .99,
               decoration: const BoxDecoration(
                 color: Colors.white,
