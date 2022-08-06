@@ -50,9 +50,7 @@ class _EnsolaradoState extends State<Ensolarado> {
           const Center(
             child:  Text('24°', style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold, color: Colors.white),),
           ),
-           SizedBox(
-            height:  MediaQuery.of(context).size.height * .28,
-          ),
+
 
           ],
         ),
