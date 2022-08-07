@@ -5,7 +5,7 @@ import 'package:climatempo/Screen/chuva.dart';
 void main ()async{
   WidgetsFlutterBinding.ensureInitialized();
   runApp(MaterialApp(
-    home: const chuva(),
+    home: const Ensolarado(),
     theme: ThemeData(
       primaryColor: const Color(0xb5d70e48),
     ),
