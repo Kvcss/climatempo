@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:climatempo/Components/navBar.dart';
 import 'dart:math';
 
 class Nublado extends StatelessWidget {
@@ -58,35 +59,7 @@ class Nublado extends StatelessWidget {
             ),
           ],
         ),
-        bottomNavigationBar:
-        Container(
-            height:  MediaQuery.of(context).size.height * .1,
-            width: MediaQuery.of(context).size.width * .99,
-            decoration: const BoxDecoration(
-                color: Color.fromRGBO(173, 173, 173, 1),
-                borderRadius: BorderRadius.only(topLeft: Radius.circular(50.0),topRight: Radius.circular(50.0) )
-            ),
-            child: Row(
-                children: const <Widget>[
-                  Padding(
-                    padding: EdgeInsets.only(left: 20),
-                    child: Text('Histórico', style: TextStyle(fontSize: 20, )),
-                  ),
-                  SizedBox(
-                    width: 60,
-                  ),
-                  Center(
-                    child: Text('Today', style: TextStyle(fontSize: 20, ),),
-                  ),
-                  SizedBox(
-                    width: 70,
-                  ),
-                  Center(
-                    child: Text('Future', style: TextStyle(fontSize: 20, ),),
-                  )
-                ]
-            )
-        ),
+        bottomNavigationBar: const NavBar(backgroundColor: Color.fromRGBO(173, 173, 173, 1)),
       ),
     );
   }
